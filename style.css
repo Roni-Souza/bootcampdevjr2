@@ -1,0 +1,116 @@
+        body {
+            background-color: #F5F5F5; /*fundo da tela*/
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*fonte utilizada*/
+        }
+
+        .container {
+            background-color: #E9E9E9;
+            margin: auto; /*margem externa*/
+            width: 600px;/* largura*/
+
+            box-shadow: 1px 3px 8px 1px rgba(0,0,0,0.2); /*sombra da margem*/
+            /* 0px(margem da direita) | 0px (margem de baixo)| 0px (borramento) | 0px (raio, aumenta a aerea da sombra)*/
+
+            border-radius: 5px ; /*borda arredondada*/
+            overflow:hidden; /*deixa as bordas iguais*/
+        }
+
+        .header {
+            padding: 2.5rem; /* margem interna*/
+        }
+
+        .flex-container {
+            display: flex; /*transforma em coluna*/
+            justify-content: space-around; /* da o espaçamento entre as divs*/
+        }
+        
+        .header-title {
+            color: #006F6F; /*cor da fonte*/
+            font-size: 2rem; /*tamanho da fonte*/
+            font-weight: 700; /*negrito*/
+            margin-bottom: 1.2rem; /*distancia das linhas*/
+        }
+
+        .header-subtitle {
+            color: #009E9E;
+            font-size: 1.2rem; /*tamanho da fonte*/
+            font-weight: 500; /*negrito*/
+            margin-bottom: 0.9rem; /*distancia das linhas*/
+        }
+
+        .col-1 { 
+        background-color: #006A6A;
+        width: 50%; /*largura da coluna 50%*/
+        padding: 1.2rem; /*margem interna*/
+        color: #FFF;
+        }
+        
+        .col-2 {
+          background-color: #009E9E;
+           width: 50%; /*largura da coluna 50%*/
+           padding: 0.6rem 20px; /* margem: 10px em cima e embaixo, 20 px dos lados*/
+           color: #FFF;
+        }
+
+        .subscription-title {
+        font-size: 1.2rem; /*tamanho da fonte*/
+        text-align: center; /*centraliza o titulo*/
+        margin-bottom: 1.2rem; /*margem*/
+        }
+
+        .price {
+            font-size: 1.6rem; /*tamanho da fonte*/
+            font-weight: 700; /*negrito*/
+        }
+
+        .month {
+            font-size: 0.9rem; /*tamanho da fonte*/
+            font-style: italic;  /*estilo da fonte*/
+            margin-left: 1.9rem; /*margem da esquerda*/
+        }
+
+        .button {
+
+            margin-top: 1.2rem ;/*margem de cima*/
+
+            width: 100%; /*margem de 100%*/
+            padding: 0.9rem 2rem; /*margem da esquerda e da direita*/
+
+            color:  #006A6A;
+
+            font-size: 1rem; /*tamanho da fonte*/
+            border-radius: 4px; /*borda arredondada*/
+            border: none; /*sem bordas*/
+            background-color: #CCCCCC;
+
+            cursor:pointer; /*altera o cursor do mouse*/
+        }
+
+        .button:hover { /*quando o cursor estiver no botão*/
+            background-color: #E9E9E9 ;
+        }
+
+        .image-group {
+            text-align: center; /*centralizando a imagem atraves da div*/
+        }
+
+        @media screen and (max-width: 620px) {
+            html {
+                font-size: 14px;
+            }
+
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .col-1, .col-2 {
+                width: 100%; 
+                box-sizing: border-box;/*ajusta o tamanho da margem e do botão*/
+            }
+
+            .container{
+                width: 95%;
+            }
+
+
+        }
