@@ -14,7 +14,6 @@
         .container {
             background-color: #E9E9E9;
             margin: auto; /*margem externa*/
-            margin-top: 500px;
             width: 600px;/* largura*/
 
             box-shadow: 1px 3px 8px 1px rgba(0,0,0,0.2); /*sombra da margem*/
@@ -25,7 +24,7 @@
         }
 
         .header {
-            padding: 40px; /* margem interna*/
+            padding: 2.5rem; /* margem interna*/
         }
 
         .flex-container {
@@ -35,59 +34,59 @@
         
         .header-title {
             color: #006F6F; /*cor da fonte*/
-            font-size: 32px; /*tamanho da fonte*/
+            font-size: 2rem; /*tamanho da fonte*/
             font-weight: 700; /*negrito*/
-            margin-bottom: 20px; /*distancia das linhas*/
+            margin-bottom: 1.2rem; /*distancia das linhas*/
         }
 
         .header-subtitle {
             color: #009E9E;
-            font-size: 18; /*tamanho da fonte*/
+            font-size: 1.2rem; /*tamanho da fonte*/
             font-weight: 500; /*negrito*/
-            margin-bottom: 15px; /*distancia das linhas*/
+            margin-bottom: 0.9rem; /*distancia das linhas*/
         }
 
         .col-1 { 
         background-color: #006A6A;
         width: 50%; /*largura da coluna 50%*/
-        padding: 20px; /*margem interna*/
+        padding: 1.2rem; /*margem interna*/
         color: #FFF;
         }
         
         .col-2 {
           background-color: #009E9E;
            width: 50%; /*largura da coluna 50%*/
-           padding: 10 px 20px; /* margem: 10px em cima e embaixo, 20 px dos lados*/
+           padding: 0.6rem 20px; /* margem: 10px em cima e embaixo, 20 px dos lados*/
            color: #FFF;
         }
 
         .subscription-title {
-        font-size: 20px; /*tamanho da fonte*/
+        font-size: 1.2rem; /*tamanho da fonte*/
         text-align: center; /*centraliza o titulo*/
-        margin-bottom: 20px; /*margem*/
+        margin-bottom: 1.2rem; /*margem*/
         }
 
         .price {
-            font-size: 26px; /*tamanho da fonte*/
+            font-size: 1.6rem; /*tamanho da fonte*/
             font-weight: 700; /*negrito*/
         }
 
         .month {
-            font-size: 15px; /*tamanho da fonte*/
+            font-size: 0.9rem; /*tamanho da fonte*/
             font-style: italic;  /*estilo da fonte*/
-            margin-left: 15px; /*margem da esquerda*/
+            margin-left: 1.9rem; /*margem da esquerda*/
         }
 
         .button {
 
-            margin-top: 20px ;/*margem de cima*/
+            margin-top: 1.2rem ;/*margem de cima*/
 
             width: 100%; /*margem de 100%*/
-            padding: 15px 32px; /*margem da esquerda e da direita*/
+            padding: 0.9rem 2rem; /*margem da esquerda e da direita*/
 
             color:  #006A6A;
 
-            font-size: 16px; /*tamanho da fonte*/
+            font-size: 1rem; /*tamanho da fonte*/
             border-radius: 4px; /*borda arredondada*/
             border: none; /*sem bordas*/
             background-color: #CCCCCC;
@@ -101,6 +100,27 @@
 
         .image-group {
             text-align: center; /*centralizando a imagem atraves da div*/
+        }
+
+        @media screen and (max-width: 620px) {
+            html {
+                font-size: 14px;
+            }
+
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .col-1, .col-2 {
+                width: 100%; 
+                box-sizing: border-box;/*ajusta o tamanho da margem e do botão*/
+            }
+
+            .container{
+                width: 95%;
+            }
+
+
         }
 
     </style>
