@@ -3,10 +3,54 @@
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*fonte utilizada*/
         }
 
+        input {
+            width: 94%; /* largura*/
+            height: 22px;
+            padding: 0.9rem;
+            font-size: 1.2rem; 
+            border-radius: 5px;
+            border: 0;
+            margin: 10px;
+
+        }
+
+         input:focus {
+            outline: none; /*tira a linha preta interna na hora de digitar*/
+            box-shadow: 0 0 10px #009E9E;
+            
+        }
+
+        
+        a {
+            color: #E9E9E9;
+            font-size: 0.8rem;
+        }
+
+        button {
+
+            margin-top: 1.2rem ;/*margem de cima*/
+
+            width: 99%; /*margem de 97%*/
+            padding: 0.9rem 2rem; /*margem da esquerda e da direita*/
+
+            color:  #006A6A;
+
+            font-size: 1rem; /*tamanho da fonte*/
+            border-radius: 4px; /*borda arredondada*/
+            border: none; /*sem bordas*/
+            background-color: #CCCCCC;
+
+            cursor:pointer; /*altera o cursor do mouse*/
+        }
+
+        button:hover { /*quando o cursor estiver no botão*/
+            background-color: #E9E9E9 ;
+        }
+
         .container {
             background-color: #E9E9E9;
             margin: auto; /*margem externa*/
-            width: 600px;/* largura*/
+            width: 600px; /* largura*/
 
             box-shadow: 1px 3px 8px 1px rgba(0,0,0,0.2); /*sombra da margem*/
             /* 0px(margem da direita) | 0px (margem de baixo)| 0px (borramento) | 0px (raio, aumenta a aerea da sombra)*/
@@ -16,7 +60,7 @@
         }
 
         .header {
-            padding: 2.5rem; /* margem interna*/
+            padding: 0.9rem; /* margem interna*/
         }
 
         .flex-container {
@@ -48,7 +92,7 @@
         .col-2 {
           background-color: #009E9E;
            width: 50%; /*largura da coluna 50%*/
-           padding: 0.6rem 20px; /* margem: 10px em cima e embaixo, 20 px dos lados*/
+           padding: 0.6rem 1.2rem; /* margem: 10px em cima e embaixo, 20 px dos lados*/
            color: #FFF;
         }
 
@@ -66,28 +110,7 @@
         .month {
             font-size: 0.9rem; /*tamanho da fonte*/
             font-style: italic;  /*estilo da fonte*/
-            margin-left: 1.9rem; /*margem da esquerda*/
-        }
-
-        .button {
-
-            margin-top: 1.2rem ;/*margem de cima*/
-
-            width: 100%; /*margem de 100%*/
-            padding: 0.9rem 2rem; /*margem da esquerda e da direita*/
-
-            color:  #006A6A;
-
-            font-size: 1rem; /*tamanho da fonte*/
-            border-radius: 4px; /*borda arredondada*/
-            border: none; /*sem bordas*/
-            background-color: #CCCCCC;
-
-            cursor:pointer; /*altera o cursor do mouse*/
-        }
-
-        .button:hover { /*quando o cursor estiver no botão*/
-            background-color: #E9E9E9 ;
+            margin-left: 0.9rem; /*margem da esquerda*/
         }
 
         .image-group {
@@ -112,5 +135,16 @@
                 width: 95%;
             }
 
+            .form-register {
+                background-color: #006A6A;
+                padding 1.2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: space-around;
+            }
 
+            .header {
+                padding: 15px;
+            }
         }
