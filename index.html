@@ -7,18 +7,26 @@
 
     <style>
         body {
-            background-color: #F5F5F5;
+            background-color: #F5F5F5; /*fundo da tela*/
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*fonte utilizada*/
         }
 
         .container {
             background-color: #E9E9E9;
             margin: auto; /*margem externa*/
+            margin-top: 500px;
 
             width: 600px;/* largura*/
+
+            box-shadow: 1px 3px 8px 1px rgba(0,0,0,0.2); /*sombra da margem*/
+            /* 0px(margem da direita) | 0px (margem de baixo)| 0px (borramento) | 0px (raio, aumenta a aerea da sombra)*/
+
+            border-radius: 5px ; /*borda arredondada*/
+            overflow:hidden; /*deixa as bordas iguais*/
         }
 
         .header {
-            padding: 20px; /* margem interna*/
+            padding: 40px; /* margem interna*/
         }
 
         .flex-container {
@@ -27,6 +35,23 @@
             justify-content: space-around; /* da o espaçamento entre as divs*/
             padding: 20px; /*margem*/
         }
+        
+        .header-title {
+            color: #006F6F; /*cor da fonte*/
+            font-size: 32px; /*tamanho da fonte*/
+            font-weight: 700; /*negrito*/
+            margin-bottom: 20px; /*distancia das linhas*/
+        }
+
+        .header-subtitle {
+            color: #009E9E;
+            font-size: 18; /*tamanho da fonte*/
+            font-weight: 500; /*negrito*/
+            margin-bottom: 15px; /*distancia das linhas*/
+        }
+        
+        
+
     </style>
 
 
@@ -34,9 +59,19 @@
 <body>
     <div class="container">
         <div class = "header">
-            Primeira Linha
+            <div class="header-title">
+                    Entre para a nossa comunidade!
+            </div>
+            <div class="header-subtitle">
+                    Faça a sua assinatura agora e ganhe 30% de desconto!
+            </div>
+            <div>
+                    Faça parte da nossa comunidade de desenvolvedores.<br>
+                    Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.
         </div>
-        <div class = "flex-container">
+     </div>
+
+    <div class = "flex-container">
             <div>
                 Coluna 1
             </div>
